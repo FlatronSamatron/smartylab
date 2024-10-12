@@ -38,7 +38,7 @@ routes.forEach((route) => {
   adjacencyList[destination] = [...adjacencyList[destination], origin];
 });
 
-const bfs = (start, dest) => {
+const pathToDetination = (start, dest) => {
   let queue = [start];
   const visited = [];
 
@@ -63,4 +63,4 @@ const bfs = (start, dest) => {
   return visited.length;
 };
 
-console.log(bfs("BGI", "EYW"));
+console.log(pathToDetination("BGI", "EYW"));
